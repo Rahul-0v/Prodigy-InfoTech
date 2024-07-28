@@ -1,0 +1,291 @@
+* {
+  margin: 2;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #bbebda;
+  color:#333;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #000;
+}
+
+
+.navbar.navbar.scrolled ul li a {
+  color: #e3f2fd;
+}
+
+.navbar.navbar.scrolled ul li a:hover {
+  color: #d1363d;
+}
+
+
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #333;
+  font-size: 35px;
+  font-family: Roboto;
+}
+
+.logo span {
+  color: #d1363d;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.4s ease-in-out;
+  padding: 10px 15px;
+}
+
+.menu ul li a:hover {
+  color: #d1363d;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.srch {
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #d1363d;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.srch::placeholder {
+  color: #333;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background: #d1363d;
+  border: 2px solid #d1363d;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0 5px 5px 0;
+  transition: 0.2s ease;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #d1363d;
+}
+
+.auth .btn {
+  margin-left: 10px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e3f2fd;
+}
+
+.content {
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content span {
+  color: #d1363d;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.content .cn {
+  background-color: #d1363d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.content .cn:hover {
+  background-color: #fff;
+  color: #d1363d;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  font-size: 18px;
+  color: #555;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.card .btn {
+  background-color: #d1363d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #fff;
+  color: #d1363d;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form .btnn {
+  background-color: #d1363d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btnn:hover {
+  background-color: #fff;
+  color: #d1363d;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .social a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+  color: #d1363d;
+}
